@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .name {
+      font-family: Calibri, sans-serif;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .surname {
+      display: none;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<span class="name" onclick="showSurname()">Akhil</span>
+<span class="name surname" id="surname">Kamalapuri</span>
+
+<script>
+  function showSurname() {
+    document.getElementById('surname').style.display = 'inline';
+  }
+</script>
+
+</body>
+</html>
