@@ -10,7 +10,7 @@ pipeline {
 
         stage('Deploy to EC2') {
             steps {
-                sshagent(['jenkins-ec2-key']) {
+                sshagent(['2c007a4a-d4b8-4a93-bce4-ed7a39be03d7']) {
                     // Copy the file to the user's home directory
                     sh 'scp -o StrictHostKeyChecking=no index.html ubuntu@13.233.231.20:~/index.html'
 
